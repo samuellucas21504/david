@@ -22,7 +22,7 @@ export default function DavidHead() {
         box.getSize(size);
 
         scene.position.set(0, -size.y / 2, -size.z * 1.4);
-        scene.rotation.set(0, 0.2, 0);
+        scene.rotation.set(0, 0.5, 0);
     }, [scene]);
 
     useFrame(() => {
