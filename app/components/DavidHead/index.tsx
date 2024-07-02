@@ -4,8 +4,13 @@ import { useEffect, useRef, useState } from "react";
 import { useDrag } from "react-use-gesture";
 import { Box3, Mesh, Vector3 } from "three";
 
-export default function DavidHead() {
-    const { scene } = useGLTF('david_head.glb');
+interface DavidHeadProps {
+    onLoad: () => void;
+  }
+  
+
+export default function DavidHead({ onLoad  } : DavidHeadProps) {
+    const { scene } = useGLTF('david_head.glb', undefined, undefined, onLoad);
     
     const headRef = useRef<Mesh>(null);
     const [ {rotation}, setRotation ] = useState({rotation: [0, 0, 0]}); 
