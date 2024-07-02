@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <filter id="outside-stroke">
+            <feMorphology in="SourceAlpha" result="DILATED" operator="dilate" radius="1"/>
+            <feFlood flood-color="white"/>
+            <feComposite in2="DILATED" operator="in"/>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <text x="0" y="150" font-family="Inter" font-size="200" fill="black" filter="url(#outside-stroke)">DAVID</text>
+</svg>
