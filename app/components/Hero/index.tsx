@@ -1,7 +1,6 @@
 "use client"
 
 import { Canvas } from "@react-three/fiber";
-import { ReactPropTypes, useState } from "react";
 import DavidHead from "../david_head";
 import { useSpring, animated } from "@react-spring/three";
 import "./styles.scss";
