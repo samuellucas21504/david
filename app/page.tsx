@@ -10,8 +10,8 @@ import { useTheme } from "next-themes";
 
 import { Themes, themeKey } from "./components/themes";
 import About from "./components/about";
-import Hero from "./components/Hero";
-import Loader from "./components/Loader";
+import Hero from "./components/hero";
+import Loader from "./components/loader";
 
 
 
