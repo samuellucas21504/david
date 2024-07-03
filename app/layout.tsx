@@ -2,7 +2,7 @@ import './globals.scss';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import ThemeProvider from './components/theme-provider';
-import { Themes, themeKey } from './components/themes';
+import { Themes } from './components/themes';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -22,7 +22,6 @@ export default function RootLayout({
             attribute='data-theme'
             defaultTheme={Themes.dark}
             themes={[Themes.dark, Themes.light]}
-            storageKey={themeKey}
           >
             {children}
           </ThemeProvider>

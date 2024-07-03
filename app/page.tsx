@@ -2,13 +2,13 @@
 
 import './components/styles.scss';
 
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 import { useTheme } from "next-themes";
 
-import { Themes, themeKey } from "./components/themes";
+import { Themes } from "./components/themes";
 import About from "./components/about";
 import Hero from "./components/hero";
 import Loader from "./components/loader";
@@ -26,15 +26,6 @@ export default function Home() {
     setIsLoading(false);
   };
   const stackRef = useRef(null);
-
-  useEffect(() => {
-    return (() => {
-      try {
-        localStorage.removeItem(themeKey);
-      } catch(e) { /* empty */ }
-    })
-  });
-
 
   useGSAP(() => {
     ScrollTrigger.create({
