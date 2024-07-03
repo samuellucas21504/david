@@ -7,8 +7,7 @@ const nextConfig = {
         loader: "akamai",
         path: "",
         unoptimized: true
-    },
-    assetPrefix: "/",
+    }
 };
 
 module.exports = nextConfig;
