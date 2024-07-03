@@ -5,10 +5,10 @@ import { useState } from "react";
 import DavidHead from "../david_head";
 import { useSpring, animated } from "@react-spring/three";
 import "./styles.scss";
-import Loader from "@/app/components/loader";
 import { ThemeSwitch } from "../theme_switch";
 import { useTheme } from "next-themes";
 import { Themes } from "../themes";
+import Loader from "../Loader";
 
 export default function Hero() {
     const [isLoading, setIsLoading] = useState(true);
