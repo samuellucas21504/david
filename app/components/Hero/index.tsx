@@ -8,6 +8,7 @@ import { ThemeSwitch } from "../theme_switch";
 import { useTheme } from "next-themes";
 import { Themes } from "../themes";
 import Image from "next/image";
+import { prefix } from "../../utils/prefix";
 
 interface HeroProps {
     handleLoad: () => void;
@@ -47,7 +48,7 @@ export default function Hero({handleLoad}: HeroProps) {
                 </Canvas>
             </div>
             <div className="spin">
-                <Image src={"./rotate.png"} width={50} height={25} alt="Rotate symbol" />
+                <Image src={`${prefix}/rotate.png`} width={50} height={25} alt="Rotate symbol" />
             </div>
 
 
