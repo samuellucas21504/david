@@ -15,7 +15,7 @@ export default function DavidHead({ onLoad  } : DavidHeadProps) {
     const headRef = useRef<Mesh>(null);
     const [ {rotation}, setRotation ] = useState({rotation: [0, 0, 0]}); 
 
-    const bind = useDrag(({ offset: [x, y] }) => {
+    const bind = useDrag(({ offset: [x, y]}) => {
         setRotation({
           rotation: [y / 100, x / 100, 0],
         });
