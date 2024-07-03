@@ -1,3 +1,9 @@
+.hero, .canvas-wrapper  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .hero {
   min-height: 100vh;
   width: 100%;
@@ -13,10 +19,9 @@
   }
 }
 
-.hero, .canvas-wrapper  {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.spin {
+  position: absolute;
+  bottom: 20%;
 }
 
 .theme-button{
@@ -43,8 +48,9 @@
   font-size: calc(100vw/ 4);
   overflow: hidden;
   text-align: center;
-  -webkit-user-select: none;     
-  -moz-user-select: none;
+
+  -webkit-user-select: none;      
+  -moz-user-select: none; 
   -ms-user-select: none; 
   user-select: none;
 
@@ -65,4 +71,35 @@
     width: 60%;
     height: 60%;
   }
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 1%;
+  font-size: 20px;
+  font-weight: 300;
+  color: black;
+
+}
+
+.border {
+  position: absolute;
+  border: 2px solid black;
+  
+  height: 20%;
+  width: 20%;
+}
+
+.top-left{
+  top: 2%;
+  left: 2%;
+  border-right: none;
+  border-bottom: none;
+}
+
+.bottom-right {
+  bottom: 2%;
+  right: 2%;
+  border-left: none;
+  border-top: none;
 }

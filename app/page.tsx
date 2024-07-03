@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import About from "./components/about";
 import Hero from "./components/hero";
 import './components/styles.scss';
@@ -9,7 +9,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 import { useTheme } from "next-themes";
-import { Themes } from "./components/themes";
+import { Themes, themeKey } from "./components/themes";
 
 
 export default function Home() {
@@ -23,6 +23,15 @@ export default function Home() {
     setIsLoading(false);
   };
   const stackRef = useRef(null);
+
+  useEffect(() => {
+    return (() => {
+      try {
+        localStorage.removeItem(themeKey);
+      } catch(e) { /* empty */ }
+    })
+  });
+
 
   useGSAP(() => {
     ScrollTrigger.create({

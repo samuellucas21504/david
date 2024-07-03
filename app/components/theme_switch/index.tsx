@@ -13,7 +13,6 @@ export const ThemeSwitch = ({ className } : ThemeSwitchProps) => {
     const isLightMode = theme == Themes.light;
 
     const handleTheme = () => {
-        console.log(theme);
         if(theme == Themes.light) {
             setTheme(Themes.dark);
         } else {

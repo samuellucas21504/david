@@ -7,6 +7,7 @@ import "./styles.scss";
 import { ThemeSwitch } from "../theme_switch";
 import { useTheme } from "next-themes";
 import { Themes } from "../themes";
+import Image from "next/image";
 
 interface HeroProps {
     handleLoad: () => void;
@@ -24,6 +25,9 @@ export default function Hero({handleLoad}: HeroProps) {
 
     return (
         <div className={`hero`}>
+            <div className="border top-left"/>
+            <div className="border bottom-right" />
+
             <div className={`background-text`}>
                 <p>D</p>
                 <p>a</p>
@@ -34,12 +38,23 @@ export default function Hero({handleLoad}: HeroProps) {
             
             <ThemeSwitch className={ `theme-button` } />
 
+            
+
             <div className="canvas-wrapper">
                 <Canvas  camera={{position: [0, 0, 0], fov: 75}} >
                         <animated.directionalLight {...lightSpring} />
                         <DavidHead onLoad={handleLoad}/>
                 </Canvas>
             </div>
+            <div className="spin">
+                <Image src={"/rotate.png"} width={50} height={25} alt="Rotate symbol" />
+            </div>
+
+
+            <div className="scroll-down">
+                Scroll down
+            </div>
+            
         </div>
     );
 }
