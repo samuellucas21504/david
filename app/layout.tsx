@@ -22,7 +22,6 @@ export default function RootLayout({
             attribute='data-theme'
             defaultTheme={Themes.dark}
             themes={[Themes.dark, Themes.light]}
-
           >
             {children}
           </ThemeProvider>
