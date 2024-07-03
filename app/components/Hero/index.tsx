@@ -18,8 +18,8 @@ export default function Hero({handleLoad}: HeroProps) {
     const isLightMode = theme == Themes.light;
 
     const lightSpring = useSpring({
-        position:  (isLightMode ? [0, 2, 1.4] : [0, -2, -1]) as [number, number, number],
-        intensity: isLightMode ? 2 : 0.5,
+        position:  (isLightMode ? [0, 1.6, 1.4] : [0, -2, -1]) as [number, number, number],
+        intensity: isLightMode ? 1.7 : 0.5,
         config: {duration: 1200},
     });
 

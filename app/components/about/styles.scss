@@ -6,8 +6,18 @@
     z-index: 2;
 
     padding: 5%;
+    width: 100%;
 
     h1 {
-        font-size: 23vw;
+        font-size: max(20vw, 14vh);
+        margin-bottom: 10vh;
+    }
+
+    text {
+        display: block;
+        font-size:  max(2vh, 1.5vw);
+        font-weight: 300;
+        text-align: justify;
+        padding-bottom: 1em;
     }
 }

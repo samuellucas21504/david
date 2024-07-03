@@ -28,6 +28,13 @@ html, body {
   touch-action: auto;
 }
 
+text {
+  -webkit-user-select: none;     
+  -moz-user-select: none;
+  -ms-user-select: none; 
+  user-select: none;
+}
+
 [data-theme="dark"] html, [data-theme="dark"] body {
   touch-action: none;
 }
