@@ -8,7 +8,7 @@ export default function About() {
     return <div className="about">
         <h1>Sobre</h1>
         <div className="grid md:grid-cols-2 grid-cols-0">
-            <Image src={`/david.webp`} width={720} height={1080} alt="David image" />
+            <Image src={`${prefix}/david.webp`} width={720} height={1080} alt="David image" />
             <section className="mt-12 md:mt-8 md:ml-8 ml-2 mr-2">
                 <p>
                     David ou Davi é uma das esculturas mais famosas do artista renascentista Michelangelo. O trabalho retrata o herói bíblico com realismo anatômico impressionante, sendo considerada uma das mais importantes obras do Renascimento. A escultura encontra-se em Florença, Itália, cidade que originalmente encomendou a obra.
