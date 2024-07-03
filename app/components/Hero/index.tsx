@@ -47,7 +47,7 @@ export default function Hero({handleLoad}: HeroProps) {
                 </Canvas>
             </div>
             <div className="spin">
-                <Image src={"/rotate.png"} width={50} height={25} alt="Rotate symbol" />
+                <Image src={"./rotate.png"} width={50} height={25} alt="Rotate symbol" />
             </div>
 
 
