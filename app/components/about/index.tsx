@@ -3,6 +3,8 @@
 import "./styles.scss";
 import Image from "next/image";
 
+import { prefix } from "../../utils/prefix";
+
 export default function About() {
     
     return <div className="about">
