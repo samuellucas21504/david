@@ -9,8 +9,6 @@ import { useTheme } from "next-themes";
 import { Themes } from "../themes";
 import Image from "next/image";
 
-import {prefix} from "../../utils/prefix";
-
 
 interface HeroProps {
     handleLoad: () => void;

@@ -1,8 +1,6 @@
 import "./styles.scss";
 import Image from "next/image";
 
-import {prefix} from "../../utils/prefix";
-
 export default function Loader() {
     return <div className="loader">
        <div className="spinner">
