@@ -1,15 +1,18 @@
 'use client';
 
-import { useEffect, useRef, useState } from "react";
-import About from "./components/about";
-import Hero from "./components/hero";
 import './components/styles.scss';
-import Loader from "./components/loader";
+
+import { useEffect, useRef, useState } from "react";
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 import { useTheme } from "next-themes";
+
 import { Themes, themeKey } from "./components/themes";
+import About from "./components/about";
+import Hero from "./components/hero";
+import Loader from "./components/loader";
+
 
 
 export default function Home() {
