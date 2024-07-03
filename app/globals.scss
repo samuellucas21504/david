@@ -9,6 +9,8 @@
 :root {
   --background: white;
   --foreground: black;
+  --surface-bg: #f9f1f1;
+  --surface-fg: #36454F;
 }
 
 [data-theme="dark"] {
@@ -23,6 +25,10 @@ html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  touch-action: pan-y;
+}
+
+[data-theme="dark"] html, [data-theme="dark"] body {
   touch-action: none;
 }
 

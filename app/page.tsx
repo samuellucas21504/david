@@ -3,7 +3,7 @@
 import { useRef, useState } from "react";
 import About from "./components/about";
 import Hero from "./components/hero";
-import './styles.scss';
+import './components/styles.scss';
 import Loader from "./components/loader";
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';

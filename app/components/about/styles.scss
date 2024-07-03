@@ -1,7 +1,13 @@
 .about {
     position: relative;
     min-height: 100vh;
-    color:white;
-    background-color: red;
+    color: var(--foreground);
+    background-color: var(--surface-bg);
     z-index: 2;
+
+    padding: 5%;
+
+    h1 {
+        font-size: 23vw;
+    }
 }
