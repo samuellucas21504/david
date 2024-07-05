@@ -62,20 +62,10 @@
       1.5px 1.5px 0 var(--foreground);
 }
 
-@media screen and (max-aspect-ratio: 1/1) {
-  .background-text {
-    font-size: calc(100vh/8);
-    flex-direction: column;
-  }
-  .canvas-wrapper {
-    width: 60%;
-    height: 60%;
-  }
-}
 
 .scroll-down {
   position: absolute;
-  bottom: 1%;
+  bottom: 2%;
   font-size: 20px;
   font-weight: 300;
   color: black;
@@ -102,4 +92,23 @@
   right: 2%;
   border-left: none;
   border-top: none;
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+  .background-text {
+    font-size: calc(100vh/8);
+    flex-direction: column;
+  }
+  .canvas-wrapper {
+    width: 50%;
+    height: 40%;
+  }
+  .spin{
+    display: none;
+  }
+
+  .scroll-down {
+    top: 2%;
+    bottom: auto;
+  }
 }

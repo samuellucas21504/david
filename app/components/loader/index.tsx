@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Loader() {
     return <div className="loader">
        <div className="spinner">
-            <Image src={`./loader.svg`} width={120} height={50} alt="Loader Image" />
+            <Image src={`./loader.svg`} width={120} height={50} alt="Loader Image" priority/>
             <span>Loading</span>
        </div>
     </div>
